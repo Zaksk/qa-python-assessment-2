@@ -174,7 +174,11 @@ def five():
 
 
 def six(string):
-    return False
+    string = string.lower()
+    if string.endswith("py"):
+        return True
+    else:
+        return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
