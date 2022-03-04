@@ -205,7 +205,12 @@ def six(string):
 
 
 def seven(a, b, c):
-    return False
+    new_list = [a,b,c]
+    new_list.sort()
+    if new_list[2] - new_list[1] == new_list[1] - new_list[0]:
+        return True
+    else:
+        return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
