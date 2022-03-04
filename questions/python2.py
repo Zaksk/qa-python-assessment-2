@@ -82,7 +82,10 @@ def two(number):
 
 
 def three(a):
-    return 1
+    first = int(str(a)+str(a))
+    second = int(str(a)+str(a)+str(a))
+    third = int(str(a)+str(a)+str(a)+str(a))
+    return a + first + second + third
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
