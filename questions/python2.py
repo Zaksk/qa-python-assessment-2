@@ -30,6 +30,9 @@
 # <HINT>
 # How does a for loop iterate through a string?
 
+from cgitb import reset
+
+
 def one(string):
     new_string=''
     
@@ -117,7 +120,13 @@ def three(a):
 
 
 def four(string1, string2):
-    return ""
+    lists = list(zip(string1,string2))
+    new = []
+    for sub in lists:
+        new.append("".join(sub))
+    res = "".join(new)
+    return res
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
