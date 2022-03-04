@@ -31,6 +31,7 @@
 # How does a for loop iterate through a string?
 
 from cgitb import reset
+from tokenize import Number
 
 
 def one(string):
@@ -144,9 +145,14 @@ def four(string1, string2):
     # There is a module which can be used to generate random numbers, this module is called random.
     # The random module contains a function called randint.
 
-
+import random
 def five():
-    return []
+    new = []
+    while len(new) < 5:
+        number = random.randint(100,200)
+        if number % 2 == 0:
+            new.append(number)
+    return new
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
