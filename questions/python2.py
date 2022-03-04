@@ -30,10 +30,6 @@
 # <HINT>
 # How does a for loop iterate through a string?
 
-from cgitb import reset
-from tokenize import Number
-
-
 def one(string):
     new_string=''
     
